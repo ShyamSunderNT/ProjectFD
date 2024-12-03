@@ -1,0 +1,125 @@
+/* Home.css */
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: #333;
+  }
+  
+  
+  
+  /* Main Section Styles */
+  .main-section {
+    position: relative;
+    height: 100vh; /* Full height of the viewport */
+    width: 100%;
+    overflow: hidden; /* Prevents the image from spilling outside */
+  }
+  
+  /* Image Styles */
+  .background-image {
+    position: absolute;  /* Ensures the image is placed inside the main section */
+    top: 0;
+    left: 0;
+    width: 100%; /* Makes the image take up the full width */
+    height: 100%; /* Makes the image take up the full height */
+    object-fit: cover; /* Ensures the image covers the entire area, maintaining its aspect ratio */
+    z-index: -1; /* Places the image behind other content */
+  }
+  
+  /* Overlay Content */
+  .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .main-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 100px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .buttons-container {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+  }
+  
+  /* Button Styles */
+  .btn2, .btn1 {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 25px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .btn2 {
+    background-color: #AD2323;
+  }
+  
+  .btn1 {
+    background-color: #387A79;
+  }
+  
+  /* Mobile View (Small Screens) */
+  @media (max-width: 480px) {
+    .main-heading {
+      font-size: 2rem; /* Adjust text size for smaller screens */
+    }
+  
+    .buttons-container {
+      flex-direction: column;
+      gap: 15px; /* Stack buttons vertically */
+    }
+  
+    .background-image {
+      height: 100%; 
+      width: 100%;/* Adjust image height for smaller screens */
+    }
+  }
+  
+  /* Tablet View (Medium Screens) */
+  @media (max-width: 768px) {
+    .main-heading {
+      font-size: 2.5rem; /* Adjust text size for tablet */
+    }
+  
+    .buttons-container {
+      gap: 15px;
+    }
+  
+    .background-image {
+      height: 100%;
+      width: 100%; /* Adjust height on tablets */
+    }
+  }
+  
+  /* Desktop View (Large Screens) */
+  @media (min-width: 1024px) {
+    .main-heading {
+      font-size: 3rem; /* Larger font size for desktop */
+    }
+  
+    .background-image {
+      height: 100%; /* Ensure image takes full height on large screens */
+    }
+  }
+ 

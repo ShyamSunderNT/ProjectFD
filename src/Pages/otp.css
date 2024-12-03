@@ -1,0 +1,32 @@
+.navbar h1{
+       color: azure;
+}
+
+.otphead{
+    text-align: center;
+}
+/* Center the OTP input box */
+.otp-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;  /* Ensure it takes full height */
+  }
+  
+  /* OTP input box styling */
+  .box-input {
+    width: 250px; /* Change the width of the OTP input box */
+    padding: 15px;
+    font-size: 18px;
+    text-align: center; /* Center the entered OTP inside the box */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 auto; /* Center the input box horizontally */
+  }
+  
+  .box-input:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(0, 200, 0, 0.2);
+  }
+  

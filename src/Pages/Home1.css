@@ -1,0 +1,109 @@
+/* Overall container */
+.container1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;  /* Full viewport height */
+}
+
+/* Navbar styles */
+/* Navbar styles */
+.navbar1 {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right on larger screens */
+    padding: 10px 20px;
+    background-color: #5e5d5d; /* Dark background */
+    position: sticky;
+    top: 0; /* Fix navbar to the top */
+    z-index: 10;
+    gap: 15px; /* Space between buttons */
+}
+
+/* Navbar button styles */
+.button5 {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button5:hover {
+    background-color: #ddd; /* Lighter background on hover */
+}
+
+/* Ensure buttons appear vertically stacked on small screens */
+@media screen and (max-width: 768px) {
+    .navbar1 {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        justify-content: flex-start; /* Align buttons to the top */
+        padding: 10px; /* Less padding on smaller screens */
+        gap: 10px; /* Reduce gap between buttons when stacked vertically */
+    }
+
+    .button5 {
+        font-size: 14px; /* Smaller font size on smaller screens */
+        padding: 8px 15px; /* Adjust button padding */
+        width: 100%; /* Make buttons take full width */
+    }
+}
+
+/* Dropdown menu styles */
+.dropdown1 {
+    position: absolute;
+    top: 50px;  /* Position the dropdown below the navbar */
+    right: 20px; /* Align dropdown to the right side */
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+
+/* Dropdown item styles */
+.dropdownItem1 {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    text-align: left;
+    width: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    opacity: 0; /* Start as invisible */
+    animation: fadeIn 0.5s ease forwards; /* Apply animation */
+}
+
+/* Hover effect */
+.dropdownItem1:hover {
+    background-color: #ddd;
+}
+
+/* Staggered animation effect */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Carousel styles */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full height of the viewport */
+    overflow: hidden; /* Hide any overflow outside the container */
+}
+
+.carousel-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Make sure the image covers the full screen without distortion */
+    transition: opacity 1s ease-in-out; /* Smooth fade-in/fade-out transition */
+}

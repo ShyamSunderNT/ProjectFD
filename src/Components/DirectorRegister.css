@@ -1,0 +1,128 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #333;
+  }
+ 
+ 
+  /* Secondary Navbar for Register and Login */
+  .navbar-secondary {
+    display: flex;
+    justify-content: flex-end;
+    background-color: gray;
+    padding: 20px;
+  }
+  
+ 
+  
+  
+  /* Form Container (Centering the Content) */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  /* Registration Form Styling */
+  .registration-form {
+    background-color:#474747;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Heading Style */
+  .registration-form h2 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  /* Input Group Styling (Label and Input Together) */
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Label Styling */
+  .input-group label {
+    font-size: 12px;
+    color: #D9D9D9;
+    margin-bottom: 5px;
+    text-align: left;
+  }
+  
+  /* Input Field Styling */
+  .input-group input {
+    padding: 12px;
+    margin: 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    width: 100%;
+    text-align: left; /* Align input text to the left */
+  }
+  
+  /* Button Styling */
+  .form-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .btn5 {
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 27px;
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; 
+  }
+  
+  .signup-btn5 {
+    background-color:#D9D9D9;
+    color: rgb(53, 52, 52);
+  }
+  
+  
+  
+  .cancel-btn {
+    background-color:#D9D9D9;
+    color: rgb(53, 52, 52);
+  }
+  
+  
+  .Btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .Btn1{
+    border: none;
+    background-color: transparent;
+    margin-right: 10%;
+    cursor: pointer;
+  }
+
+ 

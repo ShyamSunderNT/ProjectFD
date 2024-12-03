@@ -1,0 +1,64 @@
+.headtag{
+    text-align: center;
+    font-size:200px;
+    margin-top: 250px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #333;
+  }
+  
+  .logonew {
+      max-height: 50px;
+      object-fit: contain;
+      border-radius: 50%;
+  }
+
+  .home-btn {
+    margin-right: auto; /* Pushes the button to the left */
+    
+    
+    color: rgb(48, 47, 47);
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+
+  .neadnav {
+    display: flex;
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
+    height: 80px; /* Set a fixed height for the navbar */
+    background-color: #030303; /* Change this to your preferred background color */
+}
+
+/* Logo styling */
+.neadnav img {
+    width: 100px; /* Adjust logo size */
+    height: 60px; /* Adjust logo size */
+    border-radius: 50%; /* Make the logo circular */
+    object-fit: cover; /* Make sure the image covers the circle */
+}
+
+/* Styles for the navbar items */
+.navbar1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    position: relative;
+}
+
+/* Responsive behavior for the navbar items */
+@media (max-width: 768px) {
+    .navbar1 {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        align-items: center; /* Center the buttons horizontally */
+    }
+}

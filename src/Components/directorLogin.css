@@ -1,0 +1,146 @@
+/* Navbar styles */
+.navbar {
+    background-color: #282c34;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navbar img {
+    height: 50px;
+    width: auto;
+  }
+  
+  /* Secondary navbar (register/login buttons) */
+ 
+  .navbar-secondary {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(224, 220, 220);
+    padding: 20px;
+  }
+
+  
+  
+ 
+  
+  /* Login form container */
+  .form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .login-form {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input fields */
+  .input-group1 {
+    margin-bottom: 20px;
+    text-align: left;
+    
+  }
+  
+  .input-group1 label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .input-group1 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #515151;
+    color: #fcfafa;
+  }
+  
+  .input-group input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  /* Form buttons */
+  .form-buttons {
+    margin-top: 20px;
+  }
+  
+  
+  
+  .btn:hover {
+    opacity: 0.8;
+  }
+  
+  /* Cancel button */
+ 
+  
+  
+  /* Google login button */
+ /* Styling for the Google Login button container */
+.google-login {
+  margin-top: 20px;
+
+}
+
+
+/* Optional: Customize the Google login button itself */
+
+
+.google-btn svg {
+  margin-right: 8px; /* Space between Google icon and text */
+}
+
+  
+  .Btn{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .Btn1{
+    border: none;
+    background-color: transparent;
+    margin-right: 10%;
+    cursor: pointer;
+  }
+
+
+  .btn3 {
+    padding: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    width: 150px;
+    height: 27px;
+    display: flex;
+    justify-content: center; /* Horizontally center the text */
+    align-items: center; 
+  }
+  
+  .signup-btn3 {
+    background-color:#5a5858;
+    color: rgb(233, 228, 228);
+  }
+  .cancel-btn3{
+    background-color:#5a5858;
+    color: rgb(233, 228, 228);
+  }
