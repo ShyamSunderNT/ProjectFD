@@ -3,6 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom'; // To navigate to the home page after logout
 import logo from "../assets/logo.png";
 import "./dashboard.css";
+import newlogo from "../assets/newlogo.jpg"
+
 
 const Directordashboard = () => {
   const [userName, setUserName] = useState('');
@@ -38,7 +40,7 @@ const Directordashboard = () => {
     <div>
       {/* Navbar with logo */}
       <nav className='neadnav'>
-                <img src="https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-golden-photography-wing-camera-logo-png-image_6007201.png" alt="" srcset="" />
+                <img src={newlogo} alt="" srcset="" />
 
             </nav>
 

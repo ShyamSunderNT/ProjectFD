@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Home1.css';  // Import the CSS file
+import newlogo from "../assets/newlogo.jpg"
 
 const Home1 = () => {
     const navigate = useNavigate(); 
@@ -51,7 +52,7 @@ const Home1 = () => {
     return (
         <div className="container1">
             <nav className='neadnav'>
-                <img src="https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-golden-photography-wing-camera-logo-png-image_6007201.png" alt="" srcset="" />
+                <img src={newlogo} alt="" srcset="" />
 
             </nav>
             <nav className="navbar1">

@@ -2,6 +2,8 @@ import React from 'react'
 import homeimg from "../assets/home.jpg"
 import './Home.css'; 
 import { Link, useNavigate } from 'react-router-dom';
+import newlogo from "../assets/newlogo.jpg"
+
 
 const Home = () => {
   const navigate =useNavigate()
@@ -13,7 +15,7 @@ const Home = () => {
   return (
     <div>
       <nav className='neadnav'>
-                <img src="https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-golden-photography-wing-camera-logo-png-image_6007201.png" alt="" srcset="" />
+                <img src={newlogo} alt="" srcset="" />
 
             </nav>
       {/* Navbar Section */}

@@ -35,14 +35,14 @@
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
     height: 80px; /* Set a fixed height for the navbar */
-    background-color: #030303; /* Change this to your preferred background color */
+    background-color: #f7f7f7; /* Change this to your preferred background color */
 }
 
 /* Logo styling */
 .neadnav img {
-    width: 100px; /* Adjust logo size */
+    width: 150px; /* Adjust logo size */
     height: 60px; /* Adjust logo size */
-    border-radius: 50%; /* Make the logo circular */
+
     object-fit: cover; /* Make sure the image covers the circle */
 }
 

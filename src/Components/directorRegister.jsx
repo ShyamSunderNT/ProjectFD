@@ -4,6 +4,8 @@ import "./DirectorRegister.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { toast } from 'react-hot-toast';
+import newlogo from "../assets/newlogo.jpg"
+
 
 const DirectorRegister = () => {
   const [formData, setFormData] = useState({
@@ -92,7 +94,7 @@ const DirectorRegister = () => {
     <div>
        
       <nav className='neadnav'>
-                <img src="https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-golden-photography-wing-camera-logo-png-image_6007201.png" alt="" srcset="" />
+                <img src={newlogo} alt="" srcset="" />
 
             </nav>
 
