@@ -3,6 +3,7 @@ import logo from "../assets/logo.png";
 import "./DirectorRegister.css";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import { toast } from 'react-hot-toast';
 
 const DirectorRegister = () => {
   const [formData, setFormData] = useState({
@@ -52,15 +53,19 @@ const DirectorRegister = () => {
           role: 'director',
         }));
 
+        toast.success('OTP has been sent to your email. Please verify!');
+
         // Navigate to OTP verification page
         navigate('/otpverify');
       } else {
         console.log('Unexpected message:', response.data.message);
+        toast.error('Something went wrong. Please try again.');
       }
 
     } catch (error) {
       setLoading(false);
       console.error(error.response ? error.response.data.message : "Something went wrong!");
+      toast.error(error.response ? error.response.data.message : 'Something went wrong!');
     }
   };
 
@@ -85,6 +90,7 @@ const DirectorRegister = () => {
 
   return (
     <div>
+       
       <nav className='neadnav'>
                 <img src="https://png.pngtree.com/png-vector/20220719/ourmid/pngtree-golden-photography-wing-camera-logo-png-image_6007201.png" alt="" srcset="" />
 

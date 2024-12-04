@@ -252,36 +252,36 @@ const ArtistLogin = () => {
     });
   };
 
-  const handleGoogleLogin = async (response) => {
-    try {
-      const { credential } = response;  // Get the credential (tokenId) from Google login
+  // const handleGoogleLogin = async (response) => {
+  //   try {
+  //     const { credential } = response;  // Get the credential (tokenId) from Google login
   
-      // Send the Google token to your backend for verification and authentication
-      const res = await axios.post("https://projectbd-ux1l.onrender.com/api/user/google", { tokenId: credential });
+  //     // Send the Google token to your backend for verification and authentication
+  //     const res = await axios.post("https://projectbd-ux1l.onrender.com/api/user/google", { tokenId: credential });
   
-      if (res.data.token) {
-        // Check if the user is a director
-        if (res.data.user.role !== 'artist') {
-          alert("You are not authorized to log in as a artist.");
-          return;
-        }
+  //     if (res.data.token) {
+  //       // Check if the user is a director
+  //       if (res.data.user.role !== 'artist') {
+  //         alert("You are not authorized to log in as a artist.");
+  //         return;
+  //       }
   
-        // If the user is a director, proceed with the login
-        localStorage.setItem("token", res.data.token);  // Store JWT token
-        localStorage.setItem("user", JSON.stringify(res.data.user));  // Store user info
+  //       // If the user is a director, proceed with the login
+  //       localStorage.setItem("token", res.data.token);  // Store JWT token
+  //       localStorage.setItem("user", JSON.stringify(res.data.user));  // Store user info
   
         
   
-        // Navigate to the director dashboard
-        navigate('/artist-dashboard');  // Ensure this route exists
-      } else {
-        alert(res.data.message || "Google login failed!");
-      }
-    } catch (error) {
-      console.error("Error during Google login:", error);
-      alert("Google login failed!");
-    }
-  };
+  //       // Navigate to the director dashboard
+  //       navigate('/artist-dashboard');  // Ensure this route exists
+  //     } else {
+  //       alert(res.data.message || "Google login failed!");
+  //     }
+  //   } catch (error) {
+  //     console.error("Error during Google login:", error);
+  //     alert("Google login failed!");
+  //   }
+  // };
   
   
   
@@ -347,12 +347,12 @@ const ArtistLogin = () => {
           </div>
 
           {/* Google Login Button */}
-          <div className="google-login">
+          {/* <div className="google-login">
             <GoogleLogin
               onSuccess={handleGoogleLogin}  // Handle Google login success
               onError={() => alert('Google login failed!')}  // Handle Google login error
             />
-          </div>
+          </div> */}
         </form>
       </div>
     </div>

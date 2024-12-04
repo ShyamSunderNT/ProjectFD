@@ -67,11 +67,11 @@ const Home1 = () => {
                 {/* Dropdown menu (only visible when dropdownVisible is true) */}
                 {dropdownVisible && (
                     <div className="dropdown1">
+                         <button className="dropdownItem1" onClick={() => handleDropdownSelect('director')}>
+                            Director Login
+                        </button>
                         <button className="dropdownItem1" onClick={() => handleDropdownSelect('artist')}>
                             Artist Login
-                        </button>
-                        <button className="dropdownItem1" onClick={() => handleDropdownSelect('director')}>
-                            Director Login
                         </button>
                     </div>
                 )}
