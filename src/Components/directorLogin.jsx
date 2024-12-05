@@ -112,6 +112,10 @@ const DirectorLogin = () => {
     navigate('/');  // Navigate to Home page
   };
 
+  const goToDirectorLoginPage = () => {
+    navigate('/artist-login'); // Navigate to Director login page
+  };
+
 
   return (
     <div>
@@ -174,6 +178,11 @@ const DirectorLogin = () => {
               onError={() => toast.error('Google login failed!')}  // Handle Google login error
             />
           </div> */}
+
+<p className='para'>You Are An Artist?</p>
+          <button type="button" className="navigatebutton" onClick={goToDirectorLoginPage}>
+            Artist Login
+          </button>
         </form>
       </div>
     </div>

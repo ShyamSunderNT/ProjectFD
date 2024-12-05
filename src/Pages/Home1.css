@@ -19,16 +19,11 @@
 }
 
 /* Navbar button styles */
-.button5 {
-    background-color: #f1f1f1;
+.button6{
     border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    background-color: transparent;
+    padding: 12px 20px;
 }
-
 .button5:hover {
     background-color: #ddd; /* Lighter background on hover */
 }

@@ -16,7 +16,7 @@
   .navbar-secondary {
     display: flex;
     justify-content: flex-end;
-    background-color: rgb(224, 220, 220);
+    background-color: #5e5d5d;
     padding: 20px;
   }
 
@@ -27,11 +27,12 @@
   /* Login form container */
   .form-container {
     width: 100%;
-    height: 100vh;
+    height: 400px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+   justify-content: center;
+    align-items: flex-start;
     background-color: #f9f9f9;
+    padding: 50px;
   }
   
   .login-form {
@@ -143,4 +144,22 @@
   .cancel-btn3{
     background-color:#5a5858;
     color: rgb(233, 228, 228);
+  }
+  .para{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: black;
+  }
+
+  .navigatebutton{
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    background-color: #5a5858;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 100px;
+    cursor: pointer;
   }

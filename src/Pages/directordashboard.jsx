@@ -46,7 +46,7 @@ const Directordashboard = () => {
 
       {/* Navbar with user's name and logout button */}
       <nav>
-        <div className="navbar-username">
+        <div className="navbar-secondary">
           {userName && <span className="user-name">Welcome, {userName}</span>}
           {/* Logout Button */}
           {isLoggedIn && (

@@ -19,8 +19,8 @@ const Home = () => {
 
             </nav>
       {/* Navbar Section */}
-      <nav className='navbar'>
-       <button  className="button5" onClick={goToHomePage} >Home</button>
+      <nav className='navbar1'>
+       <button  className="button6" onClick={goToHomePage} >Home</button>
       </nav>
 
       {/* Main Image Section with Centered Content */}

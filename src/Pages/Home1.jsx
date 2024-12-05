@@ -57,10 +57,10 @@ const Home1 = () => {
             </nav>
             <nav className="navbar1">
                 {/* "Login" button that toggles the dropdown visibility */}
-                <button className="button5" onClick={handleRegisterClick}>
+                <button className="button6" onClick={handleRegisterClick}>
                     Register
                 </button>
-                <button className="button5" onClick={handleLoginClick}>
+                <button className="button6" onClick={handleLoginClick}>
                     Login
                 </button>
                 

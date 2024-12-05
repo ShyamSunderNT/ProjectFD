@@ -110,6 +110,10 @@ const ArtistLogin = () => {
     navigate('/');  // Navigate to Home page
   };
 
+  const goToDirectorLoginPage = () => {
+    navigate('/director-login'); // Navigate to Director login page
+  };
+
   return (
     <div>
       {/* Navbar */}
@@ -170,6 +174,10 @@ const ArtistLogin = () => {
               onError={() => alert('Google login failed!')}  // Handle Google login error
             />
           </div> */}
+          <p className='para'>You Are An Director?</p>
+          <button type="button" className="navigatebutton" onClick={goToDirectorLoginPage}>
+            Director Login
+          </button>
         </form>
       </div>
     </div>

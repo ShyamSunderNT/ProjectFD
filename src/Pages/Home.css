@@ -1,20 +1,20 @@
 /* Home.css */
 
 /* Navbar Styles */
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: #333;
-  }
+    background-color: #5e5d5d;
+  } */
   
   
   
   /* Main Section Styles */
   .main-section {
     position: relative;
-    height: 100vh; /* Full height of the viewport */
+    height: 85vh; /* Full height of the viewport */
     width: 100%;
     overflow: hidden; /* Prevents the image from spilling outside */
   }
@@ -33,7 +33,7 @@
   /* Overlay Content */
   .overlay {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -49,7 +49,7 @@
   
   .buttons-container {
     display: flex;
-    gap: 100px;
+    gap: 50px;
     justify-content: center;
   }
   
@@ -86,8 +86,8 @@
     }
   
     .buttons-container {
-      flex-direction: column;
-      gap: 15px; /* Stack buttons vertically */
+      flex-direction: row;
+      gap: 10px; /* Stack buttons vertically */
     }
   
     .background-image {
