@@ -163,3 +163,18 @@
     padding: 5px 100px;
     cursor: pointer;
   }
+  @media (max-width: 768px) {
+    .navigatebutton {
+      font-size: 14px;  /* Adjust font size */
+      padding: 5px 80px; /* Adjust padding */
+    }
+  }
+  
+  /* Media Query for Extra Small Screens (e.g., mobile portrait) */
+  @media (max-width: 480px) {
+    .navigatebutton {
+      font-size: 10px;  /* Adjust font size for smaller screens */
+      padding: 5px 60px;
+       
+    }
+  }
